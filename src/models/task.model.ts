@@ -1,5 +1,7 @@
 interface ITask {
   id: number;
+  linkbitrix: string;
+  nobitrix: number;
   status: IStatus;
   title: string;
   project: string;

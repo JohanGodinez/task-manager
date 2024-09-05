@@ -2,7 +2,12 @@
   "tasks": [
     {
       "id": 1,
-      "status": 1,
+      "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
+      "nobitrix": 66424,
+      "status": {
+        "id":1,
+        "description": "To Do"
+      },
       "title": "ASN - Transferencia",
       "project": "SAIF",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
@@ -15,7 +20,12 @@
     },
     {
       "id": 2,
-      "status": 2,
+      "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
+      "nobitrix": 66424,
+      "status": {
+        "id":2,
+        "description": "In Progress"
+      },
       "title": "ASN - Devoluciones clientes",
       "project": "SAIF",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
@@ -28,7 +38,12 @@
     },
     {
       "id": 3,
-      "status": 4,
+      "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
+      "nobitrix": 66424,
+      "status": {
+        "id": 4,
+        "description": "Done"
+      },
       "title": "Correcion compras",
       "project": "SAIF",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
@@ -41,7 +56,12 @@
     },
     {
       "id": 4,
-      "status": 1,
+      "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
+      "nobitrix": 66424,
+      "status": {
+        "id": 1,
+        "description": "To Do"
+      },
       "title": "Web - Cambios",
       "project": "PedidosWeb",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
