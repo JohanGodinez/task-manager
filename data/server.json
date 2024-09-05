@@ -1,0 +1,56 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": 1,
+      "title": "ASN - Transferencia",
+      "project": "SAIF",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
+      "user": {
+        "name": "Johan",
+        "lastname": "Godinez",
+        "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png",
+        "username": "jgodinez"
+      }
+    },
+    {
+      "id": 2,
+      "status": 2,
+      "title": "ASN - Devoluciones clientes",
+      "project": "SAIF",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
+      "user": {
+        "name": "Johan",
+        "lastname": "Godinez",
+        "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png",
+        "username": "jgodinez"
+      }
+    },
+    {
+      "id": 3,
+      "status": 4,
+      "title": "Correcion compras",
+      "project": "SAIF",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
+      "user": {
+        "name": "Diego",
+        "lastname": "Madrigal",
+        "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png",
+        "username": "dmadrigal"
+      }
+    },
+    {
+      "id": 4,
+      "status": 1,
+      "title": "Web - Cambios",
+      "project": "PedidosWeb",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis quaerat facere ut? Iste nisi perspiciatis debitis, mollitia.",
+      "user": {
+        "name": "William",
+        "lastname": "Tellez",
+        "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png",
+        "username": "wtellez"
+      }
+    }
+  ]
+}
