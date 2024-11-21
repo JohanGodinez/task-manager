@@ -1,20 +1,14 @@
-import { useQuery } from "@tanstack/react-query";
+import { Outlet, useNavigate } from "react-router-dom";
 
-import { Sidebar, Navbar } from "../../components";
-import { PanelGroup } from "./components";
-import { getTasks } from "../../services";
+import { Navbar, Button } from "../../components";
+import { PanelGroup } from "../../components";
 import { useTasksStore } from "../../store/taskStore";
+import { useFetchTask } from '../../hooks/useFetch'
 
 export const Kanban = () => {
   const setTasks = useTasksStore((state) => state.setTasks);
-  const {
-    data: tasks,
-    error,
-    isLoading,
-  } = useQuery({
-    queryKey: ["tasks"],
-    queryFn: getTasks,
-  });
+  const { data: tasks, error, isLoading } = useFetchTask()
+  const navigate = useNavigate();
 
   if (isLoading) return <>Loading...</>;
   if (error) return <>Error: {error.message}</>;
@@ -24,11 +18,14 @@ export const Kanban = () => {
   return (
     <>
       <div className="flex">
-        {/* <Sidebar /> */}
         <div className="flex-col w-full h-screen py-4">
           <Navbar />
+          <div className="w-40 p-4">
+            <Button text="Agregar" onClick={() => navigate('/kanban/create')} />
+          </div>
           <PanelGroup />
         </div>
+        <Outlet />
       </div>
     </>
   );

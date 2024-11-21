@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Modal } from "../../../components";
+import { Modal } from "..";
+import { ITask } from "../../models";
 
 interface Props {
   task: ITask;
@@ -15,8 +16,8 @@ export const Card: React.FC<Props> = ({ task }) => {
   const { name, lastname, avatar } = user;
 
   return (
-    <div className="w-full bg-gray-800 px-4 py-2 mb-4 border border-gray-400 rounded-md hover:bg-gray-700 hover:border-gray-500 cursor-pointer transition-all ease-in shadow-md">
-      <div onClick={openModal} className="flex-col">
+    <div className="w-full bg-gray-800 px-4 py-2 mb-4 border border-gray-400 rounded-md hover:border-gray-500 cursor-pointer transition-all ease-in shadow-md">
+      <div onClick={openModal} className="flex-col hover:opacity-80">
         <h1 className="font-oswald text-xl text-gray-300 py-4">{title}</h1>
         <p className="font-lato text-md text-gray-400">{description}</p>
         <div className="flex justify-end items-center gap-4 py-4">
@@ -38,14 +39,12 @@ export const Card: React.FC<Props> = ({ task }) => {
           <h1 className="text-xl font-oswald text-gray-300">{title}</h1>
           <article className="flex-colo text-sm font-lato text-gray-500">
             <article className="mt-4 flex gap-2">
-              <p className="py-1">
-                Inicio: 05/09/2024
-              </p>
-              <p className="py-1">
-                Fin: 06/09/2024
-              </p>
+              <p className="py-1">Inicio: 05/09/2024</p>
+              <p className="py-1">Fin: 06/09/2024</p>
             </article>
-            <a className="py-1" href={linkbitrix} target="_blank">#{nobitrix}</a>
+            <a className="py-1" href={linkbitrix} target="_blank">
+              #{nobitrix}
+            </a>
           </article>
 
           <p className="text-md my-4 font-lato text-gray-400">{description}</p>

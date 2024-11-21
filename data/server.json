@@ -5,7 +5,7 @@
       "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
       "nobitrix": 66424,
       "status": {
-        "id":1,
+        "id": 1,
         "description": "To Do"
       },
       "title": "ASN - Transferencia",
@@ -23,7 +23,7 @@
       "linkbitrix": "https://bitrix.distribuidorapaisa.com/company/personal/user/4129/tasks/task/view/62933/",
       "nobitrix": 66424,
       "status": {
-        "id":2,
+        "id": 2,
         "description": "In Progress"
       },
       "title": "ASN - Devoluciones clientes",
@@ -71,6 +71,47 @@
         "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png",
         "username": "wtellez"
       }
+    }
+  ],
+  "panels": [
+    {
+      "id": 1,
+      "name": "To Do"
+    },
+    {
+      "id": 1,
+      "name": "In Progress"
+    },
+    {
+      "id": 1,
+      "name": "Testing"
+    },
+    {
+      "id": 1,
+      "name": "Done"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Johan",
+      "lastname": "Godinez",
+      "avatar": "#",
+      "username": "jgodinez"
+    },
+    {
+      "id": 2,
+      "name": "Diego",
+      "lastname": "Madrigal",
+      "avatar": "#",
+      "username": "dmadrigal"
+    },
+    {
+      "id": 1,
+      "name": "William",
+      "lastname": "Gonzalez",
+      "avatar": "#",
+      "username": "wgonzalez"
     }
   ]
 }

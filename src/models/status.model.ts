@@ -1,4 +1,4 @@
-interface IStatus {
+export interface IStatus {
   id: number;
   description: string;
 }

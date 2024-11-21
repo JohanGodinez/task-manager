@@ -2,7 +2,7 @@ import { Panel } from "./Panel";
 
 export const PanelGroup = () => {
   return (
-    <div className="flex w-full justify-around gap-6 px-4">
+    <div className="flex overflow-x-auto w-full gap-6 p-4 scroll-smooth">
       <Panel
         title="To Do"
       />

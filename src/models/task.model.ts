@@ -1,4 +1,6 @@
-interface ITask {
+import { IStatus, IUser } from "./index";
+
+export interface ITask {
   id: number;
   linkbitrix: string;
   nobitrix: number;
