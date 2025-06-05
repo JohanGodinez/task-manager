@@ -11,7 +11,7 @@ export const ITask = z.object({
   description: z
     .string()
     .min(20, 'La descripcion de la tarea debe de ser de minimo 20 caracteres'),
-  user: IUser.optional(),
+  user: IUser,
   startDate: z.date(),
   endDate: z.date(),
   createdAt: z.date(),

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Modal } from "..";
-import { ITask } from "../../models";
+import { ITask, IUser } from "../../models";
 
 interface Props {
   task: ITask;
@@ -13,7 +13,7 @@ export const Card: React.FC<Props> = ({ task }) => {
   const closeModal = () => setIsModalOpen(false);
 
   const { title, description, user, linkbitrix, nobitrix } = task;
-  const { name, lastname, username, avatar } = user;
+  const { name, lastname, avatar } = user as IUser;
 
   return (
     <div className="w-full bg-gray-800 px-4 py-2 mb-4 border border-gray-400 rounded-md hover:border-gray-500 cursor-pointer transition-all ease-in shadow-md">
