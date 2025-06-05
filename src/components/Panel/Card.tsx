@@ -13,7 +13,7 @@ export const Card: React.FC<Props> = ({ task }) => {
   const closeModal = () => setIsModalOpen(false);
 
   const { title, description, user, linkbitrix, nobitrix } = task;
-  const { name, lastname, avatar } = user;
+  const { name, lastname, username, avatar } = user;
 
   return (
     <div className="w-full bg-gray-800 px-4 py-2 mb-4 border border-gray-400 rounded-md hover:border-gray-500 cursor-pointer transition-all ease-in shadow-md">

@@ -8,3 +8,6 @@ export * from './Select/Select'
 export * from './Panel/Panel'
 export * from './Panel/PanelGroup'
 export * from '../pages/TaskForm/TaskForm'
+
+export * from './layout/PublicLayout'
+export * from './layout/PrivateLayout'

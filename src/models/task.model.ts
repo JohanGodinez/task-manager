@@ -1,12 +1,21 @@
-import { IStatus, IUser } from "./index";
+import { z } from 'zod';
+import { IUser } from './user.model';
 
-export interface ITask {
-  id: number;
-  linkbitrix: string;
-  nobitrix: number;
-  status: IStatus;
-  title: string;
-  project: string;
-  description: string;
-  user: IUser;
-}
+export const ITask = z.object({
+  id: z.number(),
+  linkbitrix: z.string().optional(),
+  nobitrix: z.string().optional(),
+  status: z.number(),
+  title: z.string(),
+  project: z.string(),
+  description: z
+    .string()
+    .min(20, 'La descripcion de la tarea debe de ser de minimo 20 caracteres'),
+  user: IUser.optional(),
+  startDate: z.date(),
+  endDate: z.date(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
+});
+
+export type ITask = z.infer<typeof ITask>;

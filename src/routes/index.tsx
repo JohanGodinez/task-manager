@@ -1,20 +1,49 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Kanban from '../pages/Kanban/Kanban'
-import { TaskForm } from '../components'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { PublicLayout, TaskForm } from '../components';
+import Login from '../pages/Login';
+import Kanban from '../pages/Kanban';
+import NotFound from '../pages/NotFound';
+import ProtectedRoute from './ProtectedRoute';
 
-const Routers = () => {
+function Routers() {
   return (
-    <>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-        <Routes>
-          <Route path='/' element={<Navigate to='./kanban' />} />
-          <Route path='/kanban' element={<Kanban />}>
-            <Route path='create' element={<TaskForm />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route
+          path='/login'
+          element={
+            <PublicLayout>
+              <Login />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path='/kanban'
+          element={
+            <ProtectedRoute>
+              <Kanban />
+            </ProtectedRoute>
+          }
+        >
+          <Route
+            path='create'
+            element={<TaskForm />}
+          />
+        </Route>
+
+        <Route
+          path='/'
+          element={<Navigate to='/kanban' />}
+        />
+
+        <Route
+          path='*'
+          element={<NotFound />}
+        />
+      </Routes>
+    </Router>
+  );
 }
 
-export default Routers
+export default Routers;
